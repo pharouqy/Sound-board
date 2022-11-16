@@ -195,7 +195,7 @@ h2 {
   color: #fff;
 }
 
-div.cube:hover {
+.active {
   filter: brightness(150%);
   transform: scale(1.5);
   border-radius: 50%;

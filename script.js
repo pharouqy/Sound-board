@@ -5,6 +5,7 @@ for (let i = 0; i < audio.length; i++) {
   audio[i].classList.add("btn");
   audio[i].addEventListener("click", (e) => {
     if (audio[i].classList.contains("btn")) {
+      audio[i].classList.add("active");
       music[i].play();
       audio[i].classList.remove("btn");
     } else if (!audio[i].classList.contains("btn")) {
@@ -17,4 +18,5 @@ function sounds(i) {
   music[i].pause();
   music[i].currentTime = 0;
   audio[i].classList.add("btn");
+  audio[i].classList.remove("active");
 }
